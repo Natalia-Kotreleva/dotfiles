@@ -13,6 +13,7 @@ https://dzen.ru/a/Y6GSoD-m3BiV9j5x
 * Root password, add user... natalia
 * Network - Use networkmanager
 * Profile - type - minimal
+* Additional packages - git less base-devel
 * Install
 * Не зайти в систему
 * reboot
