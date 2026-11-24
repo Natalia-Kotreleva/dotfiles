@@ -29,3 +29,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
+
+# Переход в папку без cd и удаление слова по Ctrl + W
+setopt AUTO_CD
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+bindkey '^W' backward-kill-word
+
