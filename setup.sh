@@ -38,6 +38,8 @@ yay -S --needed --noconfirm \
     open-vm-tools gtkmm3
 
 ln -sf ~/dotfiles/config/.zshrc ~/.zshrc
+mkdir -p ~/.config
+ln -sf ~/dotfiles/config/.config/starship.toml ~/.config/starship.toml
 sudo chsh -s /usr/bin/zsh "$USER"
 
 # xfce4
@@ -46,7 +48,7 @@ ln -s ~/dotfiles/config/.config/xfce4 ~/.config/xfce4
 
 git config --global user.name "Natalia"
 git config --global user.email "natalia@o-din.ru"
-ssh-keygen -t rsa
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
 
 
 # Ruby on Rails
@@ -60,9 +62,10 @@ gem install bundler rails
 # https://wiki.archlinux.org/title/PostgreSQL_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
 sudo -iu postgres initdb -D /var/lib/postgres/data
 sudo systemctl enable --now postgresql redis vmtoolsd
+sudo systemctl enable lightdm
 sudo -u postgres psql -c "CREATE ROLE odin WITH LOGIN SUPERUSER PASSWORD 'pass';"
 
 
 mkdir -p ~/projects/gems
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 echo 'add key to gitlab'
