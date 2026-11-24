@@ -27,6 +27,7 @@ sudo localectl set-x11-keymap us,ru pc105 "" grp:alt_shift_toggle
 yay -S --needed --noconfirm \
     zsh zsh-autosuggestions zsh-syntax-highlighting starship \
     flameshot \
+    firefox google-chrome \
     ruby-build rbenv \
     postgresql redis \
     nodejs yarn \
