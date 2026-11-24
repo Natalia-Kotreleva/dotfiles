@@ -24,10 +24,13 @@ sudo localectl set-x11-keymap us,ru pc105 "" grp:alt_shift_toggle
 # ruby build
 # https://wiki.archlinux.org/title/Rbenv
 
+# 3. Установка графической оболочки (для Minimal-установки) и всех программ
 yay -S --needed --noconfirm \
+    xorg-server mesa xfce4 xfce4-goodies lightdm lightdm-gtk-greeter \
+    less unzip wget curl \
     zsh zsh-autosuggestions zsh-syntax-highlighting starship \
     flameshot \
-    firefox google-chrome \
+    firefox google-chrome code \
     ruby-build rbenv \
     postgresql redis \
     nodejs yarn \
