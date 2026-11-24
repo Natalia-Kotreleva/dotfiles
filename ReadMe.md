@@ -12,7 +12,7 @@ https://dzen.ru/a/Y6GSoD-m3BiV9j5x
 * Hostname arch
 * Root password, add user... natalia
 * Network - Use networkmanager
-* Profile - type desctop xfce4
+* Profile - type - minimal
 * Install
 * Не зайти в систему
 * reboot
